@@ -1,0 +1,53 @@
+.Recepi {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RecepiData {
+    border: solid #028090;
+    border-radius: 20px;
+}
+
+.RecepiImg {
+    object-fit: cover;
+    width: 100%;
+    height: 13em;
+    border-radius: 15px;
+}
+
+.Text {
+    margin-left: 3%;
+}
+
+#Tags.Text {
+    font-size: larger;
+    margin-left: 30%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.Text span {
+    margin-right: 3%;
+    float:right;
+    font-weight: lighter;
+}
+
+.TagsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Tag {
+    border-radius: 20px;
+    width: 80%;
+    background-color: #07A37E;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}

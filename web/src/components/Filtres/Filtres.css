@@ -1,0 +1,24 @@
+.Filtres {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TagEat {
+    margin-left: 10%;
+}
+
+.TagSelector{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.TagEat {
+    width: 70%;
+    border-color: #07A37E;
+}
+
+.TagNoEat {
+    width: 70%;
+    border-color: #07A37E;
+}

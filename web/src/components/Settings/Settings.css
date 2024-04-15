@@ -1,0 +1,14 @@
+.Settings {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.UserSelector {
+    width: 40%;
+    border-color: #07A37E;
+    background-color: white;
+    border-radius: 10px;
+    height: 3em;
+    margin-right: 100%;
+}
