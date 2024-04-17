@@ -8,7 +8,7 @@ $pdo = new PDO($dsn, $user, $password);
 
 if($result = $pdo->query("SELECT * FROM `dish`")){
     foreach($result as $row){
-        $new[]['dish_name'] = $row['dish_name'];
+        $new[] = $row;
     }
 }
 

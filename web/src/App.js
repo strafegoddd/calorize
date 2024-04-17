@@ -26,7 +26,7 @@ function App() {
             <Route path="/filtres" element={ <Filtres /> }/>
             <Route path="/recipes" element={ <Recipes /> }/>
             <Route path="/settings" element={ <Settings /> }/>
-            <Route path="/food" element={ <Recepi /> }/>
+            <Route path="/food/:id" element={ <Recepi /> }/>
         </Routes>
 
     </div>
