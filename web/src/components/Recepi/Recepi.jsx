@@ -9,7 +9,7 @@ function RecepiData (props) {
     const { id } = useParams();
     const TagsList =  <p className='Tag'>{redirectTo.ing_name0}</p>;
     //const Ingridients = props.ingridients.map((d) => <li>{d}</li>)
-
+    //tdtd
     useEffect(() => {
         const getProductDetails = async (productId) => {
             try {
