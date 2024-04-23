@@ -4,32 +4,36 @@ import pizza from './img/pitsa.jpg'
 import {Link, redirect} from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
 
-function WeaksList () {
-    const Weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 3']
-    return (
-        <dl className="Weeks">
-            <li>{Weeks[0]}</li>
-            <li>{Weeks[1]}</li>
-            <li>{Weeks[2]}</li>
-            <li>{Weeks[3]}</li>
-        </dl>
-    )
-}
-
-function DaysList () {
-    const Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    return (
-        <dl className="Days">
-            <li>{Days[0]}</li>
-            <li>{Days[1]}</li>
-            <li>{Days[2]}</li>
-            <li>{Days[3]}</li>
-            <li>{Days[4]}</li>
-            <li>{Days[5]}</li>
-            <li>{Days[6]}</li>
-        </dl>
-    )
-}
+// function WeaksList () {
+//     const Weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 3']
+//     return (
+//         <dl className="Weeks">
+//             <li>{Weeks[0]}</li>
+//             <li>{Weeks[1]}</li>
+//             <li>{Weeks[2]}</li>
+//             <li onClick={openTab}>{Weeks[3]}</li>
+//         </dl>
+//     )
+// }
+//
+// function openTab(){
+//
+// }
+//
+// function DaysList () {
+//     const Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+//     return (
+//         <dl className="Days">
+//             <li>{Days[0]}</li>
+//             <li>{Days[1]}</li>
+//             <li>{Days[2]}</li>
+//             <li>{Days[3]}</li>
+//             <li>{Days[4]}</li>
+//             <li>{Days[5]}</li>
+//             <li>{Days[6]}</li>
+//         </dl>
+//     )
+// }
 
 function DayFood () {
     let breakfast = [];
@@ -222,8 +226,8 @@ export default function Main () {
         <main>
             <div className='Schedule'>
                 <h2 className='Text'>Current <b>personal</b> meal plan</h2>
-                <WeaksList />
-                <DaysList />
+                {/*<WeaksList />*/}
+                {/*<DaysList />*/}
                 <DayFood />
             </div>
         </main>
