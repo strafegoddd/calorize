@@ -2,11 +2,17 @@ import './Recipes.css'
 import React, { useState, useEffect } from 'react';
 import toast from './img/toast.jpg'
 import pizza from './img/pitsa.jpg'
+import pelmeni from './img/pelmeni.jpg'
+import friedEggs from './img/FriedEggs.jpeg'
 import { Link } from 'react-router-dom'
 
 function RecipesList () {
     const [redirectTo, setRedirectTo] = useState("/");
-
+    let images = [];
+    images.push(pelmeni);
+    images.push(pizza);
+    images.push(toast);
+    images.push(friedEggs);
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -24,6 +30,7 @@ function RecipesList () {
     let id = 333;
     let i = 0;
     let finalStr = [];
+
     function swapping(){
         for (let i = 0; i < redirectTo.length; i++){
             finalStr.push('/food/' + String(redirectTo[i].dish_id));
@@ -38,7 +45,7 @@ function RecipesList () {
                 for (let i = 0; i < finalStr.length; i++) {
                     const id = finalStr[i];
                     links.push(
-                            <Link className="FoodList" to={id}><Food id={redirectTo[i].dish_id} name={redirectTo[i].dish_name} image={pizza}/></Link>
+                            <Link className="FoodList" to={id}><Food id={redirectTo[i].dish_id} name={redirectTo[i].dish_name} image={redirectTo[i].dish_image_url}/></Link>
                     );
                 }
                 return links;

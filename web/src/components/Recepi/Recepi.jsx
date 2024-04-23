@@ -26,15 +26,15 @@ function RecepiData (props) {
 
     return(
         <div className='RecepiData'>
-            <img className='RecepiImg' src={props.iamge} />
+            <img className='RecepiImg' src={redirectTo.dish_image_url} />
             <h2 className='Text'>{redirectTo.dish_name} <span>callories: {redirectTo.calories}</span></h2>
             <div className='TagsList'><h2 className='Text' id="Tags">Tags :</h2>{ TagsList }</div>
             <h2 className='Text'>Ingridients:</h2>
             <ul className='Text'>
                 { redirectTo.ing_name0 }
             </ul>
-            {/*<h2 className='Text'>Instruction:</h2>*/}
-            {/*<p className='Text'>{ props.instruction}</p>*/}
+            <h2 className='Text'>Instruction:</h2>
+            <p className='Text'>{redirectTo.dish_instruction}</p>
         </div>
     )
 }

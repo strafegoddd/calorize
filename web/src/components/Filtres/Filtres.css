@@ -4,21 +4,39 @@
     margin-right: auto;
 }
 
-.TagEat {
-    margin-left: 10%;
-}
-
 .TagSelector{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 6fr 1fr 6fr;
+}
+
+.leftSelector {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.rightSelector {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 .TagEat {
-    width: 70%;
     border-color: #07A37E;
 }
 
 .TagNoEat {
-    width: 70%;
     border-color: #07A37E;
+}
+
+.eatButton {
+    background-color: white;
+    border-color: #07A37E;
+    border-radius:5px;
+    margin-right: 3%;
+}
+
+.noEatButton {
+    background-color: white;
+    border-color: #07A37E;
+    border-radius: 5px;
+    margin-right: 3%;
 }

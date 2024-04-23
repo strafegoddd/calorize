@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+session_start();
 $user = 'root';
 $password = 'password';
 
